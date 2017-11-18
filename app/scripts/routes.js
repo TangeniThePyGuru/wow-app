@@ -101,6 +101,14 @@ angular.module('wowAppApp')
           }]
         }
       })
+      .when('/Videos', {
+        templateUrl: 'views/videos.html',
+        controller: 'VideosCtrl'
+      })
+      .when('/Links', {
+        templateUrl: 'views/links.html',
+        controller: 'LinksCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
