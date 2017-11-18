@@ -1,106 +1,24 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'run', 'dev' ]
 2 info using npm@3.10.10
 3 info using node@v6.11.2
-4 verbose publish [ '.' ]
-5 silly cache add args [ '.', null ]
-6 verbose cache add spec .
-7 silly cache add parsed spec Result {
-7 silly cache add   raw: '.',
-7 silly cache add   scope: null,
-7 silly cache add   escapedName: null,
-7 silly cache add   name: null,
-7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: '/home/tangeni/Desktop/wow-app',
-7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /home/tangeni/.npm/wowapp/0.0.0/package.tgz not in flight; packing
-9 verbose correctMkdir /home/tangeni/.npm correctMkdir not in flight; initializing
-10 info lifecycle wowapp@0.0.0~prepublish: wowapp@0.0.0
-11 silly lifecycle wowapp@0.0.0~prepublish: no script for prepublish, continuing
-12 verbose tar pack [ '/home/tangeni/.npm/wowapp/0.0.0/package.tgz',
-12 verbose tar pack   '/home/tangeni/Desktop/wow-app' ]
-13 verbose tarball /home/tangeni/.npm/wowapp/0.0.0/package.tgz
-14 verbose folder /home/tangeni/Desktop/wow-app
-15 verbose addLocalTarball adding from inside cache /home/tangeni/.npm/wowapp/0.0.0/package.tgz
-16 verbose correctMkdir /home/tangeni/.npm correctMkdir not in flight; initializing
-17 silly cache afterAdd wowapp@0.0.0
-18 verbose afterAdd /home/tangeni/.npm/wowapp/0.0.0/package/package.json not in flight; writing
-19 verbose correctMkdir /home/tangeni/.npm correctMkdir not in flight; initializing
-20 verbose afterAdd /home/tangeni/.npm/wowapp/0.0.0/package/package.json written
-21 silly publish { name: 'wowapp',
-21 silly publish   version: '0.0.0',
-21 silly publish   dependencies: {},
-21 silly publish   repository: {},
-21 silly publish   devDependencies:
-21 silly publish    { grunt: '^1.0.1',
-21 silly publish      'grunt-autoprefixer': '^3.0.4',
-21 silly publish      'grunt-concurrent': '^2.3.1',
-21 silly publish      'grunt-contrib-clean': '^1.0.0',
-21 silly publish      'grunt-contrib-concat': '^1.0.1',
-21 silly publish      'grunt-contrib-connect': '^0.9.0',
-21 silly publish      'grunt-contrib-copy': '^1.0.0',
-21 silly publish      'grunt-contrib-cssmin': '^1.0.2',
-21 silly publish      'grunt-contrib-htmlmin': '^2.0.0',
-21 silly publish      'grunt-contrib-imagemin': '^1.0.1',
-21 silly publish      'grunt-contrib-jshint': '^1.0.0',
-21 silly publish      'grunt-contrib-uglify': '^2.0.0',
-21 silly publish      'grunt-contrib-watch': '^1.0.0',
-21 silly publish      'grunt-filerev': '^2.1.2',
-21 silly publish      'grunt-google-cdn': '^0.4.3',
-21 silly publish      'grunt-newer': '^1.1.0',
-21 silly publish      'grunt-ng-annotate': '^2.0.2',
-21 silly publish      'grunt-svgmin': '^3.3.0',
-21 silly publish      'grunt-usemin': '^3.0.0',
-21 silly publish      'grunt-wiredep': '^3.0.1',
-21 silly publish      'jshint-stylish': '^2.2.1',
-21 silly publish      'load-grunt-tasks': '^3.1.0',
-21 silly publish      'time-grunt': '^1.0.0',
-21 silly publish      chalk: '^1.1.3',
-21 silly publish      express: '^4.14.0',
-21 silly publish      'body-parser': '^1.15.2',
-21 silly publish      'grunt-open': '^0.2.3',
-21 silly publish      'grunt-express-server': '^0.5.3' },
-21 silly publish   engines: { node: '>=0.10.0' },
-21 silly publish   readme: '# wow-app\n\nThis project is generated with [yo angularfire-express generator](https://github.com/matheushf/generator-angularfire-express)\nversion 1.1.2.\n\n## Build & development\n\nRun `grunt` for building and `grunt serve` for preview.\n\n## Testing\n\nRunning `grunt test` will run the unit tests with karma.\n',
-21 silly publish   readmeFilename: 'README.md',
-21 silly publish   gitHead: 'cc4665a9a1e4e73489049855b8e400b2e1ed8688',
-21 silly publish   description: 'This project is generated with [yo angularfire-express generator](https://github.com/matheushf/generator-angularfire-express) version 1.1.2.',
-21 silly publish   _id: 'wowapp@0.0.0',
-21 silly publish   scripts: {},
-21 silly publish   _shasum: 'ce1ac49f032c4894902b92ef3ad0cbba5c2d12cc',
-21 silly publish   _from: '.' }
-22 verbose getPublishConfig undefined
-23 silly mapToRegistry name wowapp
-24 silly mapToRegistry using default registry
-25 silly mapToRegistry registry https://registry.npmjs.org/
-26 silly mapToRegistry data Result {
-26 silly mapToRegistry   raw: 'wowapp',
-26 silly mapToRegistry   scope: null,
-26 silly mapToRegistry   escapedName: 'wowapp',
-26 silly mapToRegistry   name: 'wowapp',
-26 silly mapToRegistry   rawSpec: '',
-26 silly mapToRegistry   spec: 'latest',
-26 silly mapToRegistry   type: 'tag' }
-27 silly mapToRegistry uri https://registry.npmjs.org/wowapp
-28 verbose publish registryBase https://registry.npmjs.org/
-29 silly publish uploading /home/tangeni/.npm/wowapp/0.0.0/package.tgz
-30 verbose stack Error: auth required for publishing
-30 verbose stack     at CachingRegistryClient.publish (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
-30 verbose stack     at /usr/lib/node_modules/npm/lib/publish.js:138:14
-30 verbose stack     at mapToRegistry (/usr/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
-30 verbose stack     at publish_ (/usr/lib/node_modules/npm/lib/publish.js:107:3)
-30 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
-30 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
-30 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
-30 verbose stack     at chain (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
-30 verbose stack     at /usr/lib/node_modules/npm/lib/publish.js:73:5
-30 verbose stack     at RES (/usr/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
-31 verbose cwd /home/tangeni/Desktop/wow-app
-32 error Linux 4.10.0-38-generic
-33 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
-34 error node v6.11.2
-35 error npm  v3.10.10
-36 error code ENEEDAUTH
-37 error need auth auth required for publishing
-38 error need auth You need to authorize this machine using `npm adduser`
-39 verbose exit [ 1, true ]
+4 verbose stack Error: missing script: dev
+4 verbose stack     at run (/usr/lib/node_modules/npm/lib/run-script.js:151:19)
+4 verbose stack     at /usr/lib/node_modules/npm/lib/run-script.js:61:5
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
+4 verbose stack     at checkBinReferences_ (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
+4 verbose stack     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
+4 verbose stack     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at tryToString (fs.js:456:3)
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:443:12)
+5 verbose cwd /home/tangeni/Desktop/wow-app
+6 error Linux 4.10.0-38-generic
+7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "run" "dev"
+8 error node v6.11.2
+9 error npm  v3.10.10
+10 error missing script: dev
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
