@@ -18,3 +18,14 @@ angular.module('wowAppApp', [
     'firebase',
     'firebase.Auth'
   ]);
+
+// google search engine intergration code
+(function () {
+    var cx = '011996287582917601874:34lcresnias';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+})();
