@@ -67,20 +67,32 @@ angular.module('wowAppApp')
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        resolve: {
-          "currentAuth": ["auth", function (auth) {
-            return auth.$waitForSignIn();
-          }]
-        }
+          resolve: {
+              "currentAuth": ["auth", function (auth) {
+                  // returns a promisse so the resolve waits for it to complete
+                  return auth.$requireSignIn();
+              }]
+          }
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controllerAs: 'about',
+          resolve: {
+              "currentAuth": ["auth", function (auth) {
+                  // returns a promisse so the resolve waits for it to complete
+                  return auth.$requireSignIn();
+              }]
+          }
       })
       .when('/login', {
         templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
+        controller: 'LoginCtrl',
+          resolve: {
+              "currentAuth": ["auth", function (auth) {
+                  return auth.$waitForSignIn();
+              }]
+          }
       })
       .when('/account', {
         templateUrl: 'views/account.html',
