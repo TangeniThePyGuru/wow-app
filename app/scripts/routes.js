@@ -109,6 +109,10 @@ angular.module('wowAppApp')
         templateUrl: 'views/links.html',
         controller: 'LinksCtrl'
       })
+      .when('/q-and-a', {
+        templateUrl: 'views/q-and-a.html',
+        controller: 'QAndACtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
