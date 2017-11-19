@@ -26,7 +26,7 @@
 
 <div class="">
     <div class="">
-        <div class="col-md-4">
+        <div class="" ng-class="{'col-md-4': !auth, 'col-md-6': auth}">
 
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -95,14 +95,16 @@
                     </div>
                   <hr>
                   <h3>Comments:</h3>
-                  <div class="list-group-item-heading">
-                        asfasdas adaskdlkad asdasd kadasdads <a href="asdfasd">for more information</a>
-                      <div class="pull-right"> <b>yesterday</b> 12:56 by <em><b>John Doe</b></em> </div>
+                  <div class="list-group-item-text row">
+                      <div class="col-md-2"><img width="50px" height="50px" class="img-rounded" src="../images/yeoman.png" alt=""></div>
+                        <span class="col-md-6"> asfasdas adaskdlkad asdasd kadasdads <a href="asdfasd">for more information</a> </span>
+                      <div class="pull-right col-md-4"> <b>yesterday</b> 12:56 by <em><b>John Doe</b></em> </div>
                   </div>
                   <hr>
-                  <div class="list-group-item-text">
-                      sasdas adsd adasd ada,lkja;asda adsakasd <a href="asdkla">More Ino</a>
-                      <div class="pull-right"> <b>yesterday</b> 12:56 by <em><b>John Doe</b></em></div>
+                  <div class="list-group-item-text row">
+                         <div class="col-md-2"><img width="50px" height="50px" class="img-rounded" src="../images/yeoman.png" alt=""></div>
+                      <span class="col-md-4"> sasdas adsd adasd ada,lkja;asda adsakasd <a href="asdkla">More Ino</a> </span>
+                      <div class="pull-right col-md-4"> <b>yesterday</b> 12:56 by <em><b>John Doe</b></em></div>
                   </div>
 
                     <hr>
