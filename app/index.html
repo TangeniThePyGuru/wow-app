@@ -76,7 +76,9 @@
   <div class="" style="margin:30px">
    <div class="row">
 
-    <div class="col-md-2">
+    <div class="col-md-2"
+         ng-show-auth=""
+         ng-class="{'col-md-2': auth }">
       <div class="list-group">
         <div class="list-group-item">
           <div class="list-group-item">
@@ -97,7 +99,7 @@
         </div>
       </div>
     </div>
-    <div ng-view="" class="col-md-10"></div>
+    <div ng-view="" ng-class="{'col-md-10': auth}"></div>
    </div>
 
   </div>
